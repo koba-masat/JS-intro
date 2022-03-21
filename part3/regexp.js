@@ -15,3 +15,9 @@ console.log(fullname.test(contact));
 
 console.log(contact.replace(tel, "電話番号は、$1です"));
 console.log(contact.replace(tel, "電話番号は、$2$3$4です"));
+
+var date = /[-\/\.]/
+
+console.log("2022-3-22".split(date))
+console.log("2022/3/22".split(date))
+console.log("2022.3.22".split(date))
