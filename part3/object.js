@@ -1,3 +1,4 @@
+// toString/valueOf
 var obj = new Object();
 console.log(obj.toString());
 console.log(obj.valueOf());
@@ -17,3 +18,23 @@ console.log(num.valueOf());
 var regexp = /[0-9]*[a-z]/gi
 console.log(regexp.toString());
 console.log(regexp.valueOf());
+
+// assign
+var pet = {}; // = new Object();
+var cat = {
+    type: 'cat',
+    name: 'pochi',
+    description: 'this is cat'
+}
+var dog = {
+    type: 'dog',
+    name: 'hachi',
+    home: {
+        type: 'alone',
+        month: '2'
+    }
+}
+Object.assign(pet, cat, dog);
+console.log(pet);
+
+// create
