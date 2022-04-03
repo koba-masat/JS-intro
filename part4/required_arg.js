@@ -1,5 +1,5 @@
 function required() {
-    throw Exception();
+    throw Error('引数が足りません');
 }
 
 function getSquare(x = required(), y = 1) {
